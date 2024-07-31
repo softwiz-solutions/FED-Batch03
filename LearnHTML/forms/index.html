@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="https://www.example.com/form.php" method="get">
+      <p>
+        user name:
+        <input type="text" name="userName" id="userName" size="10" />
+      </p>
+      <p>
+        password:
+        <input
+          type="password"
+          name="password"
+          id="password"
+          size="10"
+          maxlength="10"
+        />
+      </p>
+      <p>What's your feedback about our institue?</p>
+      <textarea name="feedback" id="feedback" rows="8" cols="20">
+I want to say that
+    </textarea
+      >
+
+      <p>
+        Please Select Gender:
+        <br />
+        <input type="radio" name="gender" id="male" value="male" />Male
+        <br />
+        <input type="radio" name="gender" id="female" value="female" />Female
+        <br />
+        <input type="radio" name="gender" id="other" value="other" />Other
+      </p>
+
+      <p>
+        Select your favouri games aqsa and saba
+        <br />
+        <input
+          type="checkbox"
+          name="games"
+          id="cricket"
+          value="cricket"
+        />Basketball
+        <br />
+        <input
+          type="checkbox"
+          name="games"
+          id="badminton"
+          value="badminton"
+        />Badminton
+        <br />
+        <input
+          type="checkbox"
+          name="games"
+          id="footbal"
+          value="footbal"
+        />Footbal
+        <br />
+        <input
+          type="checkbox"
+          name="games"
+          id="chugliya"
+          value="chugliya"
+        />Chugliya
+      </p>
+    </form>
+  </body>
+</html>
