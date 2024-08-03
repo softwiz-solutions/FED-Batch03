@@ -7,35 +7,64 @@
   </head>
   <body>
     <h1>Form</h1>
-    <form action="https://www.example.com/form.php" method="get">
-      <p>
-        user name:
-        <input type="text" name="userName" id="userName" size="10" />
-      </p>
-      <p>
-        password:
-        <input
-          type="password"
-          name="password"
-          id="password"
-          size="10"
-          maxlength="10"
-        />
-      </p>
-      <p>What's your feedback about our institue?</p>
-      <textarea name="feedback" id="feedback" rows="8" cols="20">
+    <form action="../thankyou.html" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <label for="userName"> user name:</label>
+          <input
+            type="text"
+            placeholder="your-name"
+            name="userName"
+            id="userName"
+            size="10"
+            required
+          />
+        </p>
+        <p>
+          <label for="userName">DOB</label>
+          <input type="datetime-local" name="dob" id="dob" required />
+        </p>
+        <p>
+          Email:
+          <input
+            placeholder="abc@gmail.com"
+            type="email"
+            name="email"
+            id="email"
+          />
+        </p>
+        <p>
+          password:
+          <input
+            placeholder="enter your password"
+            type="password"
+            name="password"
+            id="password"
+            size="10"
+            maxlength="10"
+          />
+        </p>
+        <p>What's your feedback about our institue?</p>
+        <textarea name="feedback" id="feedback" rows="8" cols="20">
 I want to say that
     </textarea
-      >
-
+        >
+      </fieldset>
       <p>
         Please Select Gender:
         <br />
-        <input type="radio" name="gender" id="male" value="male" />Male
+        <input type="radio" name="gender" id="male" value="male" /><label
+          for="male"
+        >
+          Male</label
+        >
         <br />
-        <input type="radio" name="gender" id="female" value="female" />Female
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female"> Female</label>
         <br />
-        <input type="radio" name="gender" id="other" value="other" />Other
+        <input type="radio" name="gender" id="other" value="other" />
+        <label for="other">Other</label>
       </p>
 
       <p>
@@ -46,6 +75,7 @@ I want to say that
           name="games"
           id="cricket"
           value="cricket"
+          checked
         />Basketball
         <br />
         <input
@@ -69,6 +99,43 @@ I want to say that
           value="chugliya"
         />Chugliya
       </p>
+      <p>Select your city</p>
+      <select name="city" id="city" multiple="multiple">
+        <option value="faisalabd">Faisalabd</option>
+        <option value="lahore">Lahore</option>
+        <option value="islamabad">ISB</option>
+        <option value="karachi">Karachi</option>
+      </select>
+
+      <p>upload your image</p>
+      <input type="file" name="image" id="image" />
+
+      <!-- <input
+        type="submit"
+        name="submitButton"
+        id="submitButton"
+        value="Submit your details"
+      /> -->
+      <br />
+
+      <!-- <input
+        type="image"
+        name="submitButton"
+        id="submitButton"
+        src="https://t3.ftcdn.net/jpg/00/30/01/62/360_F_30016272_EbkpRNb3vCs37lPpwTcv2RWM7FkTHxoM.jpg"
+        height="100"
+        width="200"
+      /> -->
+      <br />
+      <button type="submit">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx-zr32Nt4ObHILolZkigy879zMMELu0b_Yg&s"
+          ="icon"
+          height="20"
+          width="20"
+        />
+        hello
+      </button>
     </form>
   </body>
 </html>
