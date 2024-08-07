@@ -10,7 +10,7 @@
     <form action="../thankyou.html" method="get">
       <fieldset>
         <legend>Personal Information</legend>
-        <p>
+        <div>
           <label for="userName"> user name:</label>
           <input
             type="text"
@@ -20,12 +20,12 @@
             size="10"
             required
           />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="userName">DOB</label>
           <input type="datetime-local" name="dob" id="dob" required />
-        </p>
-        <p>
+        </div>
+        <div>
           Email:
           <input
             placeholder="abc@gmail.com"
@@ -33,8 +33,8 @@
             name="email"
             id="email"
           />
-        </p>
-        <p>
+        </div>
+        <div>
           password:
           <input
             placeholder="enter your password"
@@ -44,14 +44,14 @@
             size="10"
             maxlength="10"
           />
-        </p>
+        </div>
         <p>What's your feedback about our institue?</p>
         <textarea name="feedback" id="feedback" rows="8" cols="20">
 I want to say that
     </textarea
         >
       </fieldset>
-      <p>
+      <div>
         Please Select Gender:
         <br />
         <input type="radio" name="gender" id="male" value="male" /><label
@@ -65,9 +65,9 @@ I want to say that
         <br />
         <input type="radio" name="gender" id="other" value="other" />
         <label for="other">Other</label>
-      </p>
+      </div>
 
-      <p>
+      <div>
         Select your favouri games aqsa and saba
         <br />
         <input
@@ -98,18 +98,20 @@ I want to say that
           id="chugliya"
           value="chugliya"
         />Chugliya
-      </p>
-      <p>Select your city</p>
-      <select name="city" id="city" multiple="multiple">
-        <option value="faisalabd">Faisalabd</option>
-        <option value="lahore">Lahore</option>
-        <option value="islamabad">ISB</option>
-        <option value="karachi">Karachi</option>
-      </select>
-
-      <p>upload your image</p>
-      <input type="file" name="image" id="image" />
-
+      </div>
+      <div>
+        <p>Select your city</p>
+        <select name="city" id="city" multiple="multiple">
+          <option value="faisalabd">Faisalabd</option>
+          <option value="lahore">Lahore</option>
+          <option value="islamabad">ISB</option>
+          <option value="karachi">Karachi</option>
+        </select>
+      </div>
+      <div>
+        <p>upload your image</p>
+        <input type="file" name="image" id="image" />
+      </div>
       <!-- <input
         type="submit"
         name="submitButton"

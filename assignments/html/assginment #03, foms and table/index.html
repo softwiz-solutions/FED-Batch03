@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <form action="/submit" method="post">
+      <!-- Personal Information Fieldset -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <br />
+
+        <label for="linkedin">Facebook Profile Link:</label>
+        <input type="url" id="linkedin" name="linkedin" />
+        <br />
+        <br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br />
+        <br />
+      </fieldset>
+      <br />
+      <br />
+
+      <!-- Job Preferences Fieldset -->
+      <fieldset>
+        <legend>Job Preferences</legend>
+        <label for="position">Position Applied For:</label>
+        <input type="text" id="position" name="position" required />
+        <br />
+        <br />
+
+        <label for="start-date">Preferred Start Date:</label>
+        <input type="date" id="start-date" name="start-date" required />
+        <br />
+        <br />
+
+        <label>Availability:</label>
+        <input
+          type="radio"
+          id="full-time"
+          name="availability"
+          value="full-time"
+          required
+        />
+        <label for="full-time">Full-time</label>
+        <input
+          type="radio"
+          id="part-time"
+          name="availability"
+          value="part-time"
+        />
+        <label for="part-time">Part-time</label>
+        <br />
+        <br />
+
+        <label for="salary">Desired Salary:</label>
+        <input type="text" id="salary" name="salary" required />
+        <br />
+        <br />
+
+        <label for="location">Work Location:</label>
+        <select id="location" name="location" required>
+          <option value="remote">Remote</option>
+          <option value="office">Office</option>
+          <option value="hybrid">Hybrid</option>
+        </select>
+        <br />
+      </fieldset>
+      <br />
+      <br />
+
+      <!-- Additional Information Fieldset -->
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills" multiple required>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="react">React</option>
+          <option value="nodejs">Node.js</option>
+          <option value="python">Python</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="cover-letter">Cover Letter:</label>
+        <textarea
+          id="cover-letter"
+          name="cover-letter"
+          rows="5"
+          required
+        ></textarea>
+        <br />
+        <br />
+
+        <label for="references"
+          >References (Name and Contact Information):</label
+        >
+
+        <input
+          type="text"
+          id="references"
+          name="references"
+          placeholder="Name and contact details"
+        />
+        <br />
+        <br />
+
+        <label>
+          <input type="checkbox" id="agreement" name="agreement" required />
+          I agree to the terms and conditions.
+        </label>
+        <br />
+        <br />
+
+        <button type="submit">Submit Application</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

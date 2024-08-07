@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <p>
+        <label for="fullName">Full Name:</label>
+        <input
+          id="fullName"
+          type="text"
+          name="fullName"
+          size="15"
+          maxlength="30"
+        /><br />
+      </p>
+      <p>
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" id="Email" /><br />
+      </p>
+      <p>
+        <label for="Password">Password:</label>
+        <input type="password" name="Password" id="Password" /><br />
+      </p>
+      <p>
+        <label for="Facebook Profile Link">Facebook Porfile Link:</label>
+        <input
+          type="Facebook Profile Link"
+          name="Facebook Profile Link"
+          id="Facebook Profile Link"
+        /><br />
+      </p>
+      <p>
+        <label for="Date of Birth">Date of Birth:</label>
+        <input type="date" name="Date of Birth" id="Date of Birth" /><br />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Job Preferences</legend>
+      <p>
+        <label for="Position Applied For">Position Applied for:</label>
+        <input
+          type="Position Applied For"
+          name="Position AppliedFor"
+          id="Position Applied For"
+        /><br />
+      </p>
+      <p>
+        <label for="Preferred Start Date">Preferred Start Date:</label>
+        <input
+          type="date"
+          name="Preferred Start Date"
+          id="Preferred Start Date"
+        /><br />
+      </p>
+      <p>
+        <label for="Availability">Availability:</label>
+        <input type="radio" name="Availability" value="Full-time" />:Full-time
+        <input type="radio" name="Availability" value="Part-time" />:Part-time
+      </p>
+      <p>
+        <label for="Desired Salary">Desired Salary:</label>
+        <input type="Salary" name="Desired Salary" id="Desired Salary" />
+      </p>
+      <p>
+        <label for="Work Location">Work Location:</label>
+        <select name="Work Location">
+          <option value="Remote">Remote</option>
+        </select>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Information</legend>
+      <p>
+        Select Skills
+        <select multiple>
+          <br />
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="React">React</option>
+        </select>
+      </p>
+      <p>
+        <label for="Cover Letter">Cover Letter:</label>
+        <textarea name="Cover Letter" cols="20" rows="5"></textarea>
+      </p>
+      <p>
+        <label for="References(Name and Contact Information)"
+          >References(Name and Contact Information):</label
+        >
+        <input
+          type="text"
+          name="References"
+          placeholder="Name and Contact details"
+        />
+      </p>
+      <p>
+        I agree to terms and conditions:<input
+          type="checkbox"
+          name="I agree to terms and condition"
+          value="I agree to terms and condition"
+        />
+      </p>
+      <p>
+        <button>Submit Application</button>
+      </p>
+    </fieldset>
+  </body>
+</html>
