@@ -1,0 +1,36 @@
+p {
+  /* color: purple; */
+}
+h2,
+h3,
+h3,
+h4 {
+  color: blue;
+}
+.para {
+  color: purple;
+}
+.text {
+  color: aqua;
+  background-color: orange;
+}
+
+h4.para {
+  color: green;
+}
+
+#header {
+  background-color: pink;
+}
+li > a {
+  color: orange;
+}
+
+div > p {
+  color: yellowgreen;
+}
+/* Sequecen */
+/* 1. important --> !importnat*/
+/* 2. inline css --> <tag style=""> */
+/* 3. internal css  <style></style>*/
+/* 4. external css <link/> */
