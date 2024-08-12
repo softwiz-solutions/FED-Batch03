@@ -1,3 +1,7 @@
+*{
+  background-color: red;
+}
+
 p {
   /* color: purple; */
 }
@@ -23,11 +27,20 @@ h4.para {
   background-color: pink;
 }
 li > a {
-  color: orange;
+  /* color: orange; */
 }
 
 div > p {
   color: yellowgreen;
+}
+div a {
+  background-color: orange;
+}
+h1+p{
+  background-color: red;
+}
+h1~p{
+  background-color: red;
 }
 /* Sequecen */
 /* 1. important --> !importnat*/
