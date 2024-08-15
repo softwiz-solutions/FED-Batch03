@@ -1,0 +1,26 @@
+h3 {
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  /* font-size: 32px; */
+}
+body {
+  font-family: sans-serif;
+}
+p {
+  /* font-family: "Courier New", Courier, monospace; */
+  /* font-size: 200%; */
+  /* font-size: 3em; */
+  /* font-size: 1rem; 16px */
+  /* font-weight: bold; */
+  /* font-style: oblique; */
+}
+p{
+    text-transform: uppercase;
+}
+p > span {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: lowercase;
+
+}
