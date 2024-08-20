@@ -53,3 +53,55 @@ p {
   letter-spacing: 20px; */
   /* text-align: justify ; */
 }
+/* .main-para::first-letter {
+  font-size: 90px;
+  color: orange;
+  background-color: purple;
+} */
+
+.main-para::first-line {
+  font-size: 23px;
+  color: orange;
+}
+
+a:link {
+  color: aqua;
+}
+
+.main-para:hover {
+  background-color: aqua;
+}
+
+button:hover {
+  background-color: purple;
+  font-size: 30px;
+}
+img:hover {
+  height: 900px;
+  width: 900px;
+}
+
+/* hover */
+/* input:hover {
+  color: red;
+  font-size: 23px;
+} */
+
+/* active */
+input:focus {
+  background-color: purple;
+}
+input:active {
+  background-color: aqua;
+}
+button:active {
+  color: green;
+  background-color: white;
+}
+
+p[class] {
+  background-color: green;
+}
+input[name="email"] {
+  background-color: orange;
+}
