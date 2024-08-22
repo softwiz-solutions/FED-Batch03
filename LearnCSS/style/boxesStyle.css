@@ -1,0 +1,19 @@
+.div {
+  background-color: red;
+  height: 89px;
+  width: 200px;
+  overflow: scroll;
+}
+p {
+  /* background-color: aqua; */
+  /* width: 280px; */
+}
+
+/* td.description {
+  min-width: 200px;
+  max-width: 500px;
+  height: 909px;
+}
+tr{
+height: 90px;
+} */
