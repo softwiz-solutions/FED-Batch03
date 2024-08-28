@@ -1,0 +1,40 @@
+ul {
+  /* list-style-type: lower-roman; */
+  /* list-style: none; */
+  /* list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB92xD1Oxc9_trJKox-nhbffE6uxM-Vyz7lg&s"); */
+  /* list-style-position: outside; */
+  list-style: outside lower-alpha;
+}
+li {
+  /* display: inline; */
+}
+
+/* tables */
+table {
+  width: 600px;
+  empty-cells: hide;
+  border-spacing: 20px
+}
+th,
+td {
+  padding: 7px 10px 10px 10px;
+  /* border-top: 1px solid #999; */
+}
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 17px;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999;
+  text-align: center;
+}
+tr.even {
+  background-color: red;
+}
+tr:hover {
+  background-color: #c3e6e5;
+  box-shadow: 1px 2px 23px red;
+}
+/* .money {
+  text-align: right;
+} */
