@@ -13,7 +13,7 @@ li {
 table {
   width: 600px;
   empty-cells: hide;
-  border-spacing: 20px
+  border-spacing: 20px;
 }
 th,
 td {
@@ -38,3 +38,43 @@ tr:hover {
 /* .money {
   text-align: right;
 } */
+
+/* forms */
+.textInput {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 25px;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 4px solid yellow;
+}
+.textInput:hover {
+  box-shadow: 1px 2px 23px red;
+  border: 4px solid red;
+}
+.textInput:focus {
+  background-color: orange;
+}
+
+label {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.optionInput {
+  height: 34px;
+  width: 43px;
+  accent-color: orange;
+  outline: none;
+  border: 3px solid yellow;
+}
+button {
+  padding: 60px 120px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  border: 3px solid purple;
+  cursor: pointer;
+}

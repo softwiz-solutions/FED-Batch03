@@ -28,7 +28,7 @@
         neque esse.
       </li>
     </ul> -->
-    <table>
+    <!-- <table>
       <tr>
         <th>Name</th>
         <th>Age</th>
@@ -57,6 +57,53 @@
         <td>28</td>
         <td>Canada</td>
       </tr>
-    </table>
+    </table> -->
+    <form action="">
+      <div>
+        <label for="email">Email</label>
+        <input class="textInput" type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="userName">User Name</label>
+        <input class="textInput" type="text" name="userName" id="userName" />
+      </div>
+      <div>
+        <label>Gender</label>
+        <input
+          type="radio"
+          class="optionInput"
+          name="gender"
+          id="male"
+          value="male"
+        />
+        <label for="male">Male</label>
+        <input
+          type="radio"
+          name="gender"
+          class="optionInput"
+          id="female"
+          value="female"
+        />
+        <label for="female">female</label>
+      </div>
+      <div>
+        <label>Hobbies</label>
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="bookReading"
+          value="book reading"
+        />
+        <label for="bookReading">Rook Reading</label>
+        <input
+          type="checkbox"
+          name="hobbies"
+          id="cricket"
+          value="playing cricket"
+        />
+        <label for="cricket">Playing cricket</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
