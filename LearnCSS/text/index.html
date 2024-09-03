@@ -6,7 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/textStyle.css" />
   </head>
-  <body>
+  <body
+    data-new-gr-c-s-check-loaded="14.1193.0"
+    data-gr-ext-installed=""
+    style=""
+  >
     <form action="">
       <div>
         <label for="userName">userName:</label>
@@ -36,12 +40,99 @@
         hello
       </p>
     </div>
-    <p class="main-para">
+    <p class="main-para" style="font-size: -18px">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolores
       inventore non <span> consequuntur.</span> Sed aperiam nobis libero
       laboriosam expedita odit voluptate ratione tempora veniam molestiae
       dolorum esse optio, eius suscipit?
     </p>
     <button>submit</button>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+
+    <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
+      <section id="shadow-host-companion"></section>
+    </div>
+    <div class="ue-sidebar-container">
+      <iframe
+        srcdoc='<!DOCTYPE html><html><head></head><body><div class="frame-root"></div></body></html>'
+      ></iframe>
+    </div>
+    <use-chat-gpt-ai
+      id="USE_CHAT_GPT_AI_ROOT"
+      class="close"
+      data-version="5.0.0"
+    ></use-chat-gpt-ai
+    ><use-chat-gpt-ai-content-menu
+      id="USE_CHAT_GPT_AI_ROOT_Context_Menu"
+    ></use-chat-gpt-ai-content-menu
+    ><use-chat-gpt-ai
+      id="MAXAI_GLOBAL_VIDEO_POPUP_CONTAINER_ID"
+      data-status="hide"
+    ></use-chat-gpt-ai
+    ><gdiv class="ginger-extension-writer" style="display: none"
+      ><gdiv class="ginger-extension-writer-frame"
+        ><iframe
+          src="chrome-extension://kdfieneakcjfaiglcfcgkidlkmlijjnh/writer/index.html"
+        ></iframe></gdiv></gdiv
+    ><max-ai-minimum-app
+      id="USE_CHAT_GPT_AI_ROOT_Minimize_Container"
+      data-version="5.0.0"
+    ></max-ai-minimum-app>
+    <div
+      id="MAXAI_SNACKBAR_CONTAINER"
+      style="z-index: 2147483647; color: rgb(255, 255, 255); position: absolute"
+    ></div>
+    <script src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/js.js"></script>
   </body>
 </html>
