@@ -1,0 +1,139 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/eKtHZcrYROV
+-->
+
+<style>:root{--background:0 0% 100%;--foreground:222.2 84% 4.9%;--card:0 0% 100%;--card-foreground:222.2 84% 4.9%;--popover:0 0% 100%;--popover-foreground:222.2 84% 4.9%;--primary:221.2 83.2% 53.3%;--primary-foreground:210 40% 98%;--secondary:210 40% 96.1%;--secondary-foreground:222.2 47.4% 11.2%;--muted:210 40% 96.1%;--muted-foreground:215.4 16.3% 44%;--accent:210 40% 96.1%;--accent-foreground:222.2 47.4% 11.2%;--destructive:0 72% 51%;--destructive-foreground:210 40% 98%;--border:214.3 31.8% 91.4%;--input:214.3 31.8% 91.4%;--ring:221.2 83.2% 53.3%;--chart-1:221.2 83.2% 53.3%;--chart-2:216 92% 60%;--chart-3:212 95% 68%;--chart-4:210 98% 78%;--chart-5:212 97% 87%;--radius:0.5rem;}</style>
+<style>h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
+</style>
+<style>body { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
+</style>
+<main class="container mx-auto py-12">
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Flex Justify Content</h2>
+    <div class="flex justify-start bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex justify-end bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex justify-center bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex justify-between bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500"></div>
+      <div class="w-20 h-20 bg-green-500"></div>
+      <div class="w-20 h-20 bg-blue-500"></div>
+    </div>
+    <div class="flex justify-around bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex justify-evenly bg-gray-200 p-4 rounded-md">
+      <div class="w-20 h-20 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2"></div>
+    </div>
+  </section>
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Flex Align Items</h2>
+    <div class="flex items-start bg-gray-200 p-4 rounded-md mb-2" style="height:200px">
+      <div class="w-20 h-10 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-30 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex items-end bg-gray-200 p-4 rounded-md mb-2" style="height:200px">
+      <div class="w-20 h-10 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-30 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex items-center bg-gray-200 p-4 rounded-md mb-2" style="height:200px">
+      <div class="w-20 h-10 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-30 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex items-baseline bg-gray-200 p-4 rounded-md mb-2" style="height:200px">
+      <div class="w-20 h-10 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-30 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex items-stretch bg-gray-200 p-4 rounded-md" style="height:200px">
+      <div class="w-20 h-10 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-30 bg-blue-500 mr-2"></div>
+    </div>
+  </section>
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Flex Wrap</h2>
+    <div class="flex flex-wrap bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-40 h-20 bg-red-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-green-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-blue-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-yellow-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-purple-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-pink-500 mr-2 mb-2"></div>
+    </div>
+    <div class="flex flex-nowrap bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-40 h-20 bg-red-500 mr-2"></div>
+      <div class="w-40 h-20 bg-green-500 mr-2"></div>
+      <div class="w-40 h-20 bg-blue-500 mr-2"></div>
+      <div class="w-40 h-20 bg-yellow-500 mr-2"></div>
+      <div class="w-40 h-20 bg-purple-500 mr-2"></div>
+      <div class="w-40 h-20 bg-pink-500 mr-2"></div>
+    </div>
+    <div class="flex flex-wrap-reverse bg-gray-200 p-4 rounded-md">
+      <div class="w-40 h-20 bg-red-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-green-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-blue-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-yellow-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-purple-500 mr-2 mb-2"></div>
+      <div class="w-40 h-20 bg-pink-500 mr-2 mb-2"></div>
+    </div>
+  </section>
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Flex Direction</h2>
+    <div class="flex flex-row bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex flex-row-reverse bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500 mr-2"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2"></div>
+    </div>
+    <div class="flex flex-col bg-gray-200 p-4 rounded-md mb-2">
+      <div class="w-20 h-20 bg-red-500 mb-2"></div>
+      <div class="w-20 h-20 bg-green-500 mb-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mb-2"></div>
+    </div>
+    <div class="flex flex-col-reverse bg-gray-200 p-4 rounded-md">
+      <div class="w-20 h-20 bg-red-500 mb-2"></div>
+      <div class="w-20 h-20 bg-green-500 mb-2"></div>
+      <div class="w-20 h-20 bg-blue-500 mb-2"></div>
+    </div>
+  </section>
+  <section class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Flex Order</h2>
+    <div class="flex bg-gray-200 p-4 rounded-md">
+      <div class="w-20 h-20 bg-red-500 mr-2 order-3"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2 order-1"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2 order-2"></div>
+    </div>
+  </section>
+  <section>
+    <h2 class="text-2xl font-bold mb-4">Flex Grow, Shrink, and Basis</h2>
+    <div class="flex bg-gray-200 p-4 rounded-md">
+      <div class="w-20 h-20 bg-red-500 mr-2 flex-grow-0 flex-shrink-0 flex-basis-auto"></div>
+      <div class="w-20 h-20 bg-green-500 mr-2 flex-grow-1 flex-shrink-1 flex-basis-0"></div>
+      <div class="w-20 h-20 bg-blue-500 mr-2 flex-grow-2 flex-shrink-2 flex-basis-auto"></div>
+    </div>
+  </section>
+</main>

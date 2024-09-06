@@ -1,0 +1,20 @@
+.mainDiv {
+  /* float: left; */
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 23px;
+}
+.clear {
+  clear: left;
+}
+
+/* screen widht/ 
+
+900, 900> larage
+600 ,600 - 900 mdedium
+300, 300 - 600 small
+<300, extra small
+*/
