@@ -1,10 +1,15 @@
 .container {
   background-color: red;
-  padding: 23px;
-  /* display: flex; */
+  /* padding: 23px; */
+  display: flex;
   height: 100vh;
-  /* justify-content: center; */
-  /* align-items: ; */
+  /* gap: 20px; */
+  flex-direction:column;
+  /* flex-wrap: wrap; */
+  /* flex-flow: wrap column-reverse; */
+
+  justify-content: center;
+  align-items: center;
   /* flex-wrap: wrap; */
 }
 .item {
@@ -31,11 +36,42 @@
   color: white;
   /* text-align: center; */
 }
-.card{
-    /* display: flex;
-    background-color: orange;
-    margin: 2px;
-    justify-content: center;
-    align-items: space-between;
-    height: 300; */
+.card {
+  /* display: flex; */
+  background-color: orange;
+  margin: 2px;
+  /* justify-content: center; */
+  /* align-items: space-between; */
+  height: 300;
+  width: 40%;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 800;
+}
+.contact-us {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.submit-div {
+  text-align: center;
+}
+
+
+.card9{
+  /* justify-self: center; */
+  /* align-self: flex-start; */
+}
+.card10{
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
