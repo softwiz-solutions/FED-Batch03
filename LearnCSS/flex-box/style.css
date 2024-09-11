@@ -3,14 +3,17 @@
   /* padding: 23px; */
   display: flex;
   height: 100vh;
-  /* gap: 20px; */
-  flex-direction:column;
-  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   /* flex-flow: wrap column-reverse; */
 
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;   */
 }
 .item {
   height: 100px;
@@ -43,7 +46,8 @@
   /* justify-content: center; */
   /* align-items: space-between; */
   height: 300;
-  width: 40%;
+  /* flex-grow: 1; */
+  width: 550px;
 }
 
 label {
@@ -64,14 +68,42 @@ label {
   text-align: center;
 }
 
-
-.card9{
+.card9 {
   /* justify-self: center; */
   /* align-self: flex-start; */
 }
-.card10{
-  align-self: flex-end;
+.card {
+  /* align-self: flex-end; */
   display: flex;
   justify-content: center;
+  gap: 23px;
   align-items: center;
+}
+.card4 {
+  /* flex-grow: 5; */
+}
+.card2 {
+  /* flex-grow: 10; */
+  /* flex-shrink: 3; */
+}
+.card1 {
+  /* order: 1; */
+  /* flex-grow: 5; */
+}
+.card11 {
+  /* order: -1; */
+}
+
+.card9 {
+  /* order: 2; */
+  /* flex-grow: 3; */
+}
+.card8 {
+  /* order: 9; */
+}
+.card7 {
+  /* order: 10; */
+}
+.card9 {
+  /* order: 1000; */
 }
