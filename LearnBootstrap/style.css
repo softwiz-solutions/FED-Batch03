@@ -1,0 +1,15 @@
+:root {
+  --primaryColor: red;
+}
+
+body {
+  background-color: var(--bs-warning);
+  
+}
+
+.heading {
+  background: linear-gradient(to right, red, blue) !important;
+}
+.main-section{
+    /* opacity: 1; */
+}
