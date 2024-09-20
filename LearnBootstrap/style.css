@@ -4,12 +4,31 @@
 
 body {
   background-color: var(--bs-warning);
-  
 }
 
 .heading {
   background: linear-gradient(to right, red, blue) !important;
 }
-.main-section{
-    /* opacity: 1; */
+.main-section {
+  /* opacity: 1; */
+  /* cursor: pointer; */
+}
+
+.main-div {
+  /* cursor: pointer; */
+}
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: scale-down;
+/* object-fit: contain; */
+}
+.img-div{
+  
+  background-color: purple;
+}
+@media (max-width: 600px) {
+  .main-div {
+    background-color: purple !important;
+  }
 }
