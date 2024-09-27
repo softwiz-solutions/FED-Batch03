@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: var(--bs-warning);
+  /* background-color: var(--bs-warning); */
 }
 
 .heading {
@@ -21,10 +21,9 @@ img {
   height: 200px;
   width: 200px;
   object-fit: scale-down;
-/* object-fit: contain; */
+  /* object-fit: contain; */
 }
-.img-div{
-  
+.img-div {
   background-color: purple;
 }
 @media (max-width: 600px) {
@@ -32,3 +31,11 @@ img {
     background-color: purple !important;
   }
 }
+.demo {
+  font-family: New York Extra Large;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+}
+
