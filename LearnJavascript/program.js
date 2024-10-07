@@ -87,3 +87,22 @@ console.log(
 
 // Problem
 // Write a js program, store your name,fathername,date of bith,age,height,class,are you hafiz? and show this in paragraph
+
+// isHafiz=true
+// areYouHafiz=true
+
+// // In Math
+// var b = 14; // b=14
+// var a = 12; // b=14,a=12
+// b = a; //b=12,a=12
+
+// console.log("a is", a, "b is", b);
+
+// var sub1 = 12;
+// var sub2 = 14;
+// // var resu = sub1 + sub2 + 123 + 342 + 34;
+// console.log("sum", sum);
+var n1 = 23;
+var n2 = 190;
+console.log("event", n1 % n2);
+document.write("<h1 style='background-color: red;'>", n1 % n2, "</h1>");
