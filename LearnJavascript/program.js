@@ -52,14 +52,14 @@ var present = true;
 var age = 16;
 // console.log("my age is", age);
 
-console.log(
-  "my name is",
-  username,
-  "my age is",
-  age,
-  "and I'm Present",
-  present
-);
+// console.log(
+//   "my name is",
+//   username,
+//   "my age is",
+//   age,
+//   "and I'm Present",
+//   present
+// );
 
 // Variable naming rules
 
@@ -102,7 +102,94 @@ console.log(
 // var sub2 = 14;
 // // var resu = sub1 + sub2 + 123 + 342 + 34;
 // console.log("sum", sum);
-var n1 = 23;
-var n2 = 190;
-console.log("event", n1 % n2);
-document.write("<h1 style='background-color: red;'>", n1 % n2, "</h1>");
+// var n1 = 23;
+// var n2 = 190;
+// console.log("event", n1 % n2);
+// document.write("<h1 style='background-color: red;'>", n1 % n2, "</h1>");
+
+// increcemnt (++), decrement (--)
+// var n1 = 34;
+// n1 = n1 + 1;
+// n1++; // n1=35
+// n1--; //n1=34
+// n1++;
+// n1-2;
+// console.log("n1 inc", n1);
+// n1 = n1 - 10;
+// console.log("n1 dec", n1);
+
+// postfix (n1++,n1--), prefix(++n1,--n1),
+// ++n1;
+// n1++
+// console.log("prefix ", n1);
+
+// prefix & post increment
+// var n1 = 12;
+// var n2;
+// n2 = ++n1; // n2= (n1=n1+1)
+// n2 = n1++; // n2= (n1=n1+1)
+// n2 = --n1; // n2= (n1=n1+1)
+// n2 = n1--; // n2= (n1=n1+1)
+// console.log("n2", n2);
+// console.log("n1", n1);
+
+// var x = 1;
+
+// // var result = x++ + x-- - x++ - ++x;
+// console.log("result", ++x - --x + x++ - x--);
+// console.log("result", x);
+
+// var x = 12;
+// // x = x + 10;
+// x += 10; // x=x+10
+
+// console.log("x", x);
+
+// 2. comparison operator
+//  < , > , >= , <= , == , === , !=
+
+// var n1 = 52;
+// var n2 = 34;
+// var userName = prompt("Enter your name");
+// var age = prompt("Enter your age");
+// console.log("my name is", userName, "my age is ", age);
+// console.log("n1", n1);
+// console.log(n1 > n2);
+
+// var n1 = prompt("enter number 1");
+// var n1Input = parseInt(n1);
+// var n2 = prompt("enter number 2");
+// var n2Input = parseInt(n2);
+
+// var n1 = parseInt(prompt("enter number 1"));
+// var n2 = parseInt(prompt("enter number 2"));
+// console.log("n1>n2", n1 > n2);
+// console.log("n1", typeof n1);
+// console.log("n1Inpufjsdfj djsfk jsfldtr", typeof n1Input);
+// console.log("n2", typeof n2);
+// console.log("n2Input", typeof n2Input);
+
+var n1 = 0;
+// var n2 = 25;
+// var result = n1 >= n2;
+// var result = 5 <= 5;
+// var result1 = 5 == "5";
+// var result2 = 5 === "5";
+// var result2 = 5 != 2;
+// console.log("reuslt", result1);
+// console.log("reuslt", result2);
+// 12-40
+// console.log("2",n1>12 && n1<40)
+// T && T=T
+// F && T= F
+// T && F = F
+
+console.log("2", n1 > 12 || n1 < 40);
+// T || F= T
+// F || T=T
+
+var result = !(12 > 24) && (24 < 53 || 4 > 5) && 123 > 24;
+//  T && (T || F )&& T
+// T && T && T
+// T
+// console.log("reuslt", !result);
