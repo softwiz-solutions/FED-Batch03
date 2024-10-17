@@ -184,12 +184,28 @@ var n1 = 0;
 // F && T= F
 // T && F = F
 
-console.log("2", n1 > 12 || n1 < 40);
+// console.log("2", n1 > 12 || n1 < 40);
 // T || F= T
 // F || T=T
 
-var result = !(12 > 24) && (24 < 53 || 4 > 5) && 123 > 24;
+// var result = !(12 > 24) && (24 < 53 || 4 > 5) && 123 > 24;
 //  T && (T || F )&& T
 // T && T && T
 // T
 // console.log("reuslt", !result);
+// var n1 = 13;
+// var n2 = 12;
+// var result = n1 % 2 == 0 ? "even" : "odd";
+// T?...:
+// console.log("result", result);
+
+// write a js program to get the age from the user, if age is less then 18 show that you are under 18 otherwise show that you are adult
+
+var age = parseInt(prompt("Enter you age"));
+
+var result = age < 18 ? "You are under 18" : "You are adult";
+console.log("result", result);
+
+
+
+
