@@ -1,4 +1,4 @@
-// console.log("hello")
+// console.log("hello");
 
 // Type of loops
 // 1. while
@@ -11,17 +11,16 @@
 // 3.statment (work)
 // 4.increment / decrement
 
-var i = 1;
-
-while (i<10) {
-  console.log("i", i);
-  //   console.log("hello");
+// var i = 1;
+var i = 0;
+var n = 2;
+while (i > 0) {
+  console.log(" while hello");
+  // console.log("2X" + i + "=" + n * i);
   i++;
 }
 
 // console.log("i after while loop", i);
-
-
 
 /*
 2x1=2
@@ -35,3 +34,28 @@ while (i<10) {
 2x9=18
 2x10=20
 */
+
+// do while loop
+
+// 1.initialization , 1
+// 2.statment (work)
+// 3.increment / decrement
+// 4.condition <=5
+var i = 0;
+do {
+  console.log("hello do whiule");
+  // i++;
+} while (i > 0);
+
+
+
+
+// 1.initialization , 1
+// 2.condition <=5
+// 3.statment (work)
+// 4.increment / decrement
+
+
+// for(initiaztion;condition;incree/dec){
+//   stement/
+// }
