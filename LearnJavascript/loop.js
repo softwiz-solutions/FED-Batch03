@@ -12,13 +12,13 @@
 // 4.increment / decrement
 
 // var i = 1;
-var i = 0;
-var n = 2;
-while (i > 0) {
-  console.log(" while hello");
-  // console.log("2X" + i + "=" + n * i);
-  i++;
-}
+// var i = 1;
+// var n = parseInt(prompt("enter number"));
+// while (i <= 10) {
+//   // console.log(" while hello");
+//   console.log(n + " X " + i + " = " + n * i);
+//   i++;
+// }
 
 // console.log("i after while loop", i);
 
@@ -47,15 +47,29 @@ do {
   // i++;
 } while (i > 0);
 
-
-
-
 // 1.initialization , 1
 // 2.condition <=5
 // 3.statment (work)
 // 4.increment / decrement
 
-
 // for(initiaztion;condition;incree/dec){
 //   stement/
 // }
+
+// var i = 0;
+// var x="ali"
+// while (x!="Ahmad") {
+//   i++
+//   if(i==10){
+//     x="Ahmad"
+//   }
+//   console.log("hello", i);
+// }
+
+for (var i = 0; i < 10; i++) {
+  console.log("hello");
+}
+
+// main diff b/w for loop
+// 1. number of iterations is not known in while loop
+// 2 number of iterations is known in for loop
