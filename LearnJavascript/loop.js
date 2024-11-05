@@ -66,10 +66,61 @@ do {
 //   console.log("hello", i);
 // }
 
-for (var i = 0; i < 10; i++) {
-  console.log("hello");
-}
+// for (var i = 0; i < 10; i++) {
+//   console.log("hello");
+// }
 
 // main diff b/w for loop
 // 1. number of iterations is not known in while loop
 // 2 number of iterations is known in for loop
+// let counter = 0;
+// for (let i = 1; i <= 5; i++) {
+//   for (let j = 1; j <= 5; j++) {
+//     console.log("i" + i, "j" + j);
+//     counter++;
+//   }
+// }
+// console.log("counter", counter);
+// 1 1
+// 1 2
+// 2 1
+// 2 2
+
+// loop controls
+// 1. breaks
+// 2. continue
+
+// for (var i = 0; i < 10; i++) {
+//   if (i === 5) {
+//     break;
+//   }
+//   console.log("hello break", i);
+// }
+
+// for (var i = 0; i < 10; i++) {
+//   if (i === 5) {
+//     continue;
+//   }
+//   console.log("hello continue", i);
+// }
+// console.log("ended");
+
+// for (var i = 0; i < 10; i++) {
+//   var userName = prompt("Enter your name");
+//   var option = prompt("Do you want to continue Y/N");
+//   if (option === "N" || option === "n") {
+//     break;
+//   }
+//   console.log("Your name is", userName);
+//   console.log("Your option was", option);
+// }
+
+
+var i = 0;
+do {
+  var userName = prompt("Enter your name");
+  var option = prompt("Do you want to continue Y/N");
+  console.log("Your name is", userName);
+  console.log("Your option was", option);
+  i++;
+} while ((option != "N" || option != "n") && i < 10);
