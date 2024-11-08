@@ -1,0 +1,6 @@
+// Array Assignment
+
+// 1. write a js program , enter 5 animal name in array and show each name of animal using loop
+// 2. write a js program, get 5 names of countires from user and show each country using loop
+// 3. write a js program, get the number of element from the arrray, then save the name of animal based on the number enter by user, like if user want to make arrray of length 5, then get 5 names of animal, in short get the length of array from user and create array based on this.
+// example: like user enter n=5, array.length will be 5 and index will be 0 to 1

@@ -49,3 +49,5 @@ for (var i = 0; i < fruitArray.length; i++) {
   //   console.log("Array", fruitArray[4]);
 }
 // console.log("fruit array", fruitArray.length);
+
+
