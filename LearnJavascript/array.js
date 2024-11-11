@@ -29,25 +29,72 @@
 // console.log("student", studentArray);
 // console.log("array", studentArray[0]);
 
-var fruitArray = [];
+// var fruitArray = [];
 
-for (var i = 0; i < 5; i++) {
-  fruitArray[i] = prompt("Enter fruit name");
-  //   fruitArray[0] = "Mango"
-  //   fruitArray[1] = "orange"
-  //   fruitArray[2] = "banan"
-  //   fruitArray[3] = "stwarebary"
-  //   fruitArray[4] = "peach"
-}
+// for (var i = 0; i < 5; i++) {
+//   fruitArray[i] = prompt("Enter fruit name");
+//   //   fruitArray[0] = "Mango"
+//   //   fruitArray[1] = "orange"
+//   //   fruitArray[2] = "banan"
+//   //   fruitArray[3] = "stwarebary"
+//   //   fruitArray[4] = "peach"
+// }
 
-for (var i = 0; i < fruitArray.length; i++) {
-  console.log("Array", fruitArray[i]);
-  //   console.log("Array", fruitArray[0]);
-  //   console.log("Array", fruitArray[1]);
-  //   console.log("Array", fruitArray[2]);
-  //   console.log("Array", fruitArray[3]);
-  //   console.log("Array", fruitArray[4]);
-}
-// console.log("fruit array", fruitArray.length);
+// for (var i = 0; i < fruitArray.length; i++) {
+//   console.log("Array", fruitArray[i]);
+//   //   console.log("Array", fruitArray[0]);
+//   //   console.log("Array", fruitArray[1]);
+//   //   console.log("Array", fruitArray[2]);
+//   //   console.log("Array", fruitArray[3]);
+//   //   console.log("Array", fruitArray[4]);
+// }
+// // console.log("fruit array", fruitArray.length);
 
+// var fruits = ["mango", "banana", "apple"];
+// console.log("fuirt", fruits.length - 1);
+// console.log("last element", fruits[fruits.length - 1]); // fruits[2]
+// fruits[fruits.length - 1] = "hello";
 
+// ********* Methods of arrays *******************
+// console.log("real", fruits);
+
+// 1. Adding or removing last element
+// POP()
+// fruits.pop();
+// console.log("pop", fruits);
+
+// PUSH()
+
+// var fruits = ["mango", "banana", "apple"];
+// fruits.push("strawberry");
+// fruits.push("grapes");
+// fruits.push("watermelon");
+// fruits.pop();
+// fruits.push("peach");
+// console.log("fruits", fruits);
+
+// 2. Adding or removing first element
+// // SHIFT() remove first element
+
+// var animals = ["cat", "dog", "rat"];
+// animals.shift();
+// console.log("animals", animals);
+
+// var fruits = ["mango", "banana", "apple"];
+// // UNSHIFT() add first  element
+
+// var animals = ["cat", "dog", "rat"];
+// animals.unshift("cow", "donkey", "horse", "goat");
+// animals.unshift("donkey");
+// animals.unshift("horse");
+// animals.unshift("goat");
+// console.log("animals", animals);
+
+var cityNames = ["fsd"];
+cityNames.push("lhr", "isb");
+cityNames.shift();
+cityNames.unshift("psh", "quto");
+cityNames.pop();
+cityNames.push("krch");
+console.log("cityame", cityNames);
+console.log("cityame lenggth", cityNames.length);
