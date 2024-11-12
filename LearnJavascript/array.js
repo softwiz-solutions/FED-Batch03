@@ -130,6 +130,6 @@ for (let i = 0; i < cleanCityNames.length; i++) {
   }
 }
 // if (cityNameFound == "no") {
-if (!cityNameFound) {
+if (cityNameFound == false) {
   alert("your city is not clean");
 }
