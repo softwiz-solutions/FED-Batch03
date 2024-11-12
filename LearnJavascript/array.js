@@ -90,11 +90,46 @@
 // animals.unshift("goat");
 // console.log("animals", animals);
 
-var cityNames = ["fsd"];
-cityNames.push("lhr", "isb");
-cityNames.shift();
-cityNames.unshift("psh", "quto");
-cityNames.pop();
-cityNames.push("krch");
-console.log("cityame", cityNames);
-console.log("cityame lenggth", cityNames.length);
+// var cityNames = ["fsd"];
+// cityNames.push("lhr", "isb");
+// cityNames.shift();
+// cityNames.unshift("psh", "quto");
+// cityNames.pop();
+// cityNames.push("krch");
+// console.log("cityame", cityNames);
+// console.log("cityame lenggth", cityNames.length);
+
+// add or remove element anywhere
+
+// for removing
+// SPLICE()
+// var cityNames = ["fsd", "lhr", "isb", "psh", "quto"];
+// cityNames.splice(4, 2);
+// // cityName.splice(index,number of element)
+// console.log("objects", cityNames);
+// alert("hello")
+// for addming
+// var cityNames = ["fsd", "lhr", "isb", "psh", "quto"];
+// cityNames.splice(1, 1, "slk");
+// // cityName.splice(index,number of element)
+// // console.log("objecwts", cityNames);
+// alert(cityNames);
+// alert(cityNames.length);
+
+var cleanCityNames = ["lhr", "isb", "psh", "quto", "fsd"];
+
+var userCityName = prompt("Enter your city name");
+// var cityNameFound = "no";
+var cityNameFound = false;
+for (let i = 0; i < cleanCityNames.length; i++) {
+  if (cleanCityNames[i] == userCityName) {
+    // cityNameFound = "yes";
+    cityNameFound = true;
+    alert("your city is clean");
+    break;
+  }
+}
+// if (cityNameFound == "no") {
+if (!cityNameFound) {
+  alert("your city is not clean");
+}
