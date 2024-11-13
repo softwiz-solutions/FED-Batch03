@@ -116,20 +116,45 @@
 // alert(cityNames);
 // alert(cityNames.length);
 
-var cleanCityNames = ["lhr", "isb", "psh", "quto", "fsd"];
+// var cleanCityNames = ["lahore", "islamabad", "peshawar", "quota", "faisalabad"];
 
-var userCityName = prompt("Enter your city name");
-// var cityNameFound = "no";
-var cityNameFound = false;
-for (let i = 0; i < cleanCityNames.length; i++) {
-  if (cleanCityNames[i] == userCityName) {
-    // cityNameFound = "yes";
-    cityNameFound = true;
-    alert("your city is clean");
-    break;
-  }
-}
-// if (cityNameFound == "no") {
-if (cityNameFound == false) {
-  alert("your city is not clean");
-}
+// var userCityName = prompt("Enter your city name"); //Faisalabad
+// // var cityNameFound = "no";
+// var cityNameFound = false;
+// for (let i = 0; i < cleanCityNames.length; i++) {
+//   if (cleanCityNames[i] == userCityName.toLowerCase()) {
+//     // cityNameFound = "yes";
+//     cityNameFound = true;
+//     alert("your city is clean");
+//     break;
+//   }
+// }
+// // if (cityNameFound == "no") {
+// if (cityNameFound == false) {
+//   alert("your city is not clean");
+// }
+
+// Chaning Case , method for string
+// ali , lower , ALI , uppercase
+// "ali"=="Ali" -->wrong
+// var cityName = "faisalabad";
+// var userCityName = "faisalabad";
+// console.log("loer case", userCityName.toUpperCase());
+// console.log("comarpsi", cityName == userCityName.toLowerCase());
+
+var cityToCheck = "iSLAMABAD"; // Faisalabad
+// console.log("🚀 ~ cityToCheck:", cityToCheck)
+
+var firstChar = cityToCheck.slice(0, 1);
+// console.log("🚀 ~ firstChar:", firstChar)
+
+firstChar = firstChar.toUpperCase();
+// console.log("🚀 ~ firstChar: firstChar.toUpperCase();", firstChar)
+
+var secondChar = cityToCheck.slice(1, cityToCheck.length);
+// console.log("🚀 ~ secondChar:", secondChar)
+secondChar = secondChar.toLowerCase();
+// console.log("🚀 ~ secondChar: secondChar.toUpperCase();", secondChar)
+
+var finalCityToCheck = firstChar + secondChar;
+// console.log("🚀 ~ finalCityToCheck: ", finalCityToCheck)
