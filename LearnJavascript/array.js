@@ -142,19 +142,19 @@
 // console.log("loer case", userCityName.toUpperCase());
 // console.log("comarpsi", cityName == userCityName.toLowerCase());
 
-var cityToCheck = "iSLAMABAD"; // Faisalabad
-// console.log("🚀 ~ cityToCheck:", cityToCheck)
+// var cityToCheck = "iSLAMABAD"; // Faisalabad
+// // console.log("🚀 ~ cityToCheck:", cityToCheck)
 
-var firstChar = cityToCheck.slice(0, 1);
-// console.log("🚀 ~ firstChar:", firstChar)
+// var firstChar = cityToCheck.slice(0, 1);
+// // console.log("🚀 ~ firstChar:", firstChar)
 
-firstChar = firstChar.toUpperCase();
-// console.log("🚀 ~ firstChar: firstChar.toUpperCase();", firstChar)
+// firstChar = firstChar.toUpperCase();
+// // console.log("🚀 ~ firstChar: firstChar.toUpperCase();", firstChar)
 
-var secondChar = cityToCheck.slice(1, cityToCheck.length);
-// console.log("🚀 ~ secondChar:", secondChar)
-secondChar = secondChar.toLowerCase();
-// console.log("🚀 ~ secondChar: secondChar.toUpperCase();", secondChar)
+// var secondChar = cityToCheck.slice(1, cityToCheck.length);
+// // console.log("🚀 ~ secondChar:", secondChar)
+// secondChar = secondChar.toLowerCase();
+// // console.log("🚀 ~ secondChar: secondChar.toUpperCase();", secondChar)
 
-var finalCityToCheck = firstChar + secondChar;
-// console.log("🚀 ~ finalCityToCheck: ", finalCityToCheck)
+// var finalCityToCheck = firstChar + secondChar;
+// // console.log("🚀 ~ finalCityToCheck: ", finalCityToCheck)
