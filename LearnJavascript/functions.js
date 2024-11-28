@@ -69,9 +69,42 @@ function nameGenerator(userName) {
   return name;
 }
 
+// let userName = prompt("enter your name");
+// let generatedName = nameGenerator(userName);
+// console.log("🚀 ~ generatedName:", generatedName);
 
+function ageDecider(age) {
+  var ans;
+  // party ticket system
+  if (age >= 18) {
+    if (age >= 50) {
+      return "adult";
+    } else if (age >= 20) {
+      // console.log("young");
+      return "young";
+    } else {
+      // console.log("you are adult");
+      return "You are adult";
+    }
+  } else {
+    if (age >= 15) {
+      // console.log("your are", 18 - age, "year younger than 18 ");
+      return "your are " + (18 - age) + " year younger than 18 ";
+    }
+    // console.log("you are not allowed");
+    return "you are not allowed";
+  }
 
-let userName = prompt("enter your name");
-let generatedName = nameGenerator(userName);
-console.log("🚀 ~ generatedName:", generatedName);
+  console.log("object");
+  return ans;
+}
 
+// var age = parseInt(prompt("Enter your age"));
+// var result = ageDecider(age);
+
+console.log("🚀 ~ result:", result);
+
+function greeting(userName) {
+  console.log("hello " + userName);
+}
+ 
