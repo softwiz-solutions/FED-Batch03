@@ -1,0 +1,88 @@
+
+Assignment#14 - Functions in JavaScript
+
+Dear Students,
+
+For this assignment, we will focus on implementing JavaScript functions for different tasks. Please convert the following problem statements into JavaScript functions:
+
+Note: You can use array if needed
+
+1.Find Maximum Between Two Numbers
+Write a function findMaxBetweenTwoNumbers(num1, num2) to return the maximum of two numbers.
+
+2.Find Maximum Between Three Numbers
+Write a function findMaxBetweenThreeNumbers(num1, num2, num3) to return the maximum of three numbers.
+
+3.Check If a Number is Negative, Positive, or Zero
+Write a function checkNumberSign(num) to check whether a number is positive, negative, or zero.
+
+4.Check Divisibility by 5 and 11
+Write a function checkDivisibility(num) to check whether a number is divisible by both 5 and 11.
+
+5.Check If a Number is Even or Odd
+Write a function checkEvenOdd(num) to check if a number is even or odd.
+
+6. Check Leap Year
+Write a function checkLeapYear(year) to determine whether a given year is a leap year or not.
+
+7. Check If a Character is an Alphabet
+Write a function isAlphabet(char) to check if the provided character is an alphabet.
+
+8. Check Vowel or Consonant
+Write a function checkVowelOrConsonant(char) that checks if the given alphabet is a vowel or consonant.
+
+9. Check If a Character is Alphabet, Digit, or Special Character
+Write a function checkCharacterType(char) to check if the character is an alphabet, a digit, or a special character.
+
+10. Check Uppercase or Lowercase Alphabet
+Write a function checkCase(char) to check whether a character is an uppercase or lowercase alphabet.
+
+11. Print Day of the Week by Week Number
+Write a function getWeekDay(weekNumber) to return the corresponding weekday for a given week number.
+
+12. Print Days in a Month
+Write a function getDaysInMonth(monthNumber) to return the number of days in a given month number.
+
+13. Count Total Number of Notes for a Given Amount
+Write a function countNotes(amount) that takes an amount and returns the total number of notes needed to make that amount using denominations like 100, 50, 20, 10, etc.
+
+14. Check Validity of a Triangle Based on Angles
+Write a function isValidTriangleByAngles(angle1, angle2, angle3) to check if the sum of three angles forms a valid triangle.
+
+15. Check Validity of a Triangle Based on Sides
+Write a function isValidTriangleBySides(side1, side2, side3) to check if three sides can form a valid triangle.
+
+16. Classify Triangle Type
+Write a function classifyTriangle(side1, side2, side3) to check whether a triangle is equilateral, isosceles, or scalene.
+
+17. Find All Roots of a Quadratic Equation
+Write a function findQuadraticRoots(a, b, c) to find the real roots of a quadratic equation.
+
+18. Calculate Profit or Loss
+Write a function calculateProfitOrLoss(costPrice, sellingPrice) to calculate profit or loss.
+
+19. Calculate Percentage and Grade
+Write a function calculateGrade(marks) that takes marks in five subjects (Physics, Chemistry, Biology, Mathematics, Computer) and calculates the percentage and grade.
+
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+
+20 .Calculate Gross Salary Based on Basic Salary
+Write a function calculateGrossSalary(basicSalary) that calculates the gross salary of an employee based on the following conditions:
+
+Basic Salary <= 10000 : HRA = 20%, DA = 80%
+Basic Salary <= 20000 : HRA = 25%, DA = 90%
+Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+21.Calculate Electricity Bill
+Write a function calculateElectricityBill(units) that calculates the total electricity bill based on the following rates:
+
+For first 50 units: Rs. 0.50/unit
+For next 100 units: Rs. 0.75/unit
+For next 100 units: Rs. 1.20/unit
+For units above 250: Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill.
