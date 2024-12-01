@@ -5,19 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    button {
+      background-color: orange;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 20px;
+      transition: all 0.5s;
+      border: none;
+    }
+    button:hover {
+      transform: translateY(-10px);
+    }
+
+    .email-input {
+      padding: 12px;
+      background-color: orange;
+    }
+  </style>
   <body>
     <h1>Js</h1>
+
+    <form action="">
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          
+          value="email.com"
+        />
+      </div>
+    </form>
+
+    <!-- <button
+      onmouseover="this.style.backgroundColor='green';this.style.color='orange';"
+    >
+      Say Hello
+    </button> -->
+
+    <img
+      onmouseleave="src='https://imgd.aeplcdn.com/370x208/n/cw/ec/139651/curvv-exterior-right-front-three-quarter.jpeg?isig=0&q=80'"
+      src="https://imgd.aeplcdn.com/370x208/n/cw/ec/139651/curvv-exterior-right-front-three-quarter.jpeg?isig=0&q=80"
+      alt="car image"
+      onclick="src='https://t4.ftcdn.net/jpg/05/37/32/57/360_F_537325726_GtgjRiyc37BLPn9OmisBVVZec9frLaL0.jpg'"
+    />
     <!-- <a
       href="JavaScript:void(0)"
       onclick="greeting('aqsa hanif')"
       ondblclick="greeting('amber')"
-      >Say Hello</a -->
-    <a
+      >Say Hello</a> -->
+    <!-- <a
       href="JavaScript:void(0)"
       onmouseenter="greeting('aqsa hanif')"
       onmouseleave="greeting('amber')"
-           >Say Hello</a
-    >
+      >Say Hello</a
+    > -->
     <!-- <a href="#" onclick="greeting('aqsa hanif')">Say Hello</a> -->
     <!-- <script src="program.js"></script> -->
     <!-- <script src="condition.js"></script> -->

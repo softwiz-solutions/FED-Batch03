@@ -105,6 +105,5 @@ function ageDecider(age) {
 console.log("🚀 ~ result:", result);
 
 function greeting(userName) {
-  console.log("hello " + userName);
+  alert("hello " + userName);
 }
- 
