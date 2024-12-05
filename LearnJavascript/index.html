@@ -10,7 +10,7 @@
       background-color: orange;
       padding: 10px;
       border-radius: 10px;
-      font-size: 20px;
+      font-size: 14px;
       transition: all 0.5s;
       border: none;
     }
@@ -25,19 +25,29 @@
   </style>
   <body>
     <h1>Js</h1>
-
-    <form action="">
-      <div>
-        <label for="email">Email</label>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          
-          value="email.com"
-        />
-      </div>
-    </form>
+    <br />
+    <br />
+    <!-- <form action="" onsubmit="submit()"> -->
+    <div>
+      <label for="email">Email</label>
+      <input
+        type="text"
+        name="emaifsadfsdfl"
+        id="email"
+        
+        onfocus="this.style.backgroundColor='red';
+          this.style.fontSize='20px'
+          "
+        onblur="this.style.backgroundColor='yellow'"
+      />
+    </div>
+    <br />
+    <button type="button">Enter your dertila</button>
+    <br />
+    <br />
+    <br />
+    <button onclick="submit()">Say Hello</button>
+    <!-- </form> -->
 
     <!-- <button
       onmouseover="this.style.backgroundColor='green';this.style.color='orange';"
@@ -69,7 +79,8 @@
     <!-- <script src="array.js"></script> -->
     <!-- <script src="string.js"></script> -->
     <!-- <script src="dates.js"></script> -->
-    <script src="functions.js"></script>
+    <!-- <script src="functions.js"></script> -->
+    <script src="event.js"></script>
     <!-- <script src="number.js"></script> -->
 
     <!-- <script>
