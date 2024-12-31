@@ -19,5 +19,22 @@ function findMaxBetweenTwoNumbers() {
   document.getElementById("result1").innerHTML = result;
 }
 
+function targetElementByTagName() {
+  // var headings = document.getElementsByTagName("h1");
+  // console.log("🚀 ~ targetElementByTagName ~ headings:", headings);
 
+  // // headings[1].style.fontSize = "23px";
 
+  // for (var i = 0; i < headings.length; i++) {
+  //   headings[i].style.fontSize = "90px";
+  //   var number=i+1
+  //   headings[i].innerHTML = "Heading " + number;
+  // }
+  var container = document.getElementById("heading-div");
+  var headings = container.getElementsByTagName("h1");
+  for (var i = 0; i < headings.length; i++) {
+    headings[i].style.fontSize = "90px";
+    var number = i + 1;
+    headings[i].innerHTML = "Heading " + number;
+  }
+}
