@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Document</title>
+    <style>
+      .demo-para {
+        background-color: red;
+        color: white;
+        font-size: 3rem;
+      }
+    </style>
   </head>
   <body>
+    <div id="chat">
+      <h1>hello this is html generate</h1>
+    </div>
     <div id="para-div">
-      <p>hello</p>
+      <p id="without-class">hello</p>
       <p>child 1</p>
-      <p id="2nd-child">child 2 <i>how</i> <b>are</b> <b>you</b> ?</p>
+      <p id="2nd-child">child 2 <i> how</i> <b>are</b> <b>you</b> ?</p>
       <span>3rd child</span>
+      <img src="demo.jpg" alt="image" id="demo-image" />
+      <button onclick="createCustomeAttribute()">Create Attribute</button>
     </div>
     <script src="dom.js"></script>
   </body>
