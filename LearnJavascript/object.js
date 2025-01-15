@@ -71,7 +71,42 @@ var student2 = {
 // }
 // sayHello()
 
-var studentsArray = [student1, student2];
-console.log("🚀 ~ studentsArray:", studentsArray)
-console.log("🚀 ~ studentsArray:", studentsArray[1].marks.biology)
+// var studentsArray = [student1, student2];
+// console.log("🚀 ~ studentsArray:", studentsArray)
+// console.log("🚀 ~ studentsArray:", studentsArray[1].marks.biology)
 
+var student = {
+  email: "user1@gmail.com",
+  name: "zohan",
+  password: "123556",
+};
+// var name="hello"
+// var { email, name:studentName, password:userPassowrd } = student;
+
+// // console.log("password", student.password);
+// // console.log("password", student.name);
+// // console.log("password", student.email);
+// console.log("email",email)
+// console.log("name",name)
+// console.log("studentName",studentName)
+// console.log("email",password)
+
+// console.log("student name", student.name);
+// console.log("student name", student["name"]);
+console.log("entry", Object.keys(student));
+
+// var array=[]
+// for(var i in Object.keys(student)){ // for (var i=0; i<array.length; i++)
+//   console.log("i",i)
+// }
+
+// var fruits=["aple","bnan","stra"]
+// for (var fruit of fruits){
+//   console.log("🚀 ~ fruit:", fruit)
+
+// }
+
+for (var key of Object.keys(student)) {
+  console.log("key", key); // email
+  console.log("value", student[key]);// student["email"] , // student["name"], //student["passowrfd"]
+}
