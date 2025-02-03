@@ -41,46 +41,115 @@ function Para(props) {
   return <p>{`Cool ${title ? title : "defualt value"}`}</p>;
 }
 
-function List(props) {
-  const { list, color } = props;
-  console.log("🚀 ~ List ~ color:", color);
-  console.log("🚀 ~ FruitsList ~ list:", list);
-  // var fruits = ["mango", "orange", "banan", "apple"];
+// function List(props) {
+//   const { list, color } = props;
+//   console.log("🚀 ~ List ~ color:", color);
+//   console.log("🚀 ~ FruitsList ~ list:", list);
+//   // var fruits = ["mango", "orange", "banan", "apple"];
 
-  // fruits.map((item) => {
-  //   console.log("item", item);
-  // });
-  return (
-    <ul>
-      {/* <li>Mango</li>
-      <li>Orange</li> */}
-      {list.map((item, index) => {
-        return (
-          <li
-            className={color == "red" || index == 3 ? "list-red" : "list"}
-            key={index}
-          >
-            {item}
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
-function HomePage() {
+//   // fruits.map((item) => {
+//   //   console.log("item", item);
+//   // });
+//   return (
+//     <ul>
+//       {/* <li>Mango</li>
+//       <li>Orange</li> */}
+//       {list.map((item, index) => {
+//         return (
+//           <li
+//             className={color == "red" || index == 3 ? "list-red" : "list"}
+//             key={index}
+//           >
+//             {item}
+//           </li>
+//         );
+//       })}
+//     </ul>
+//   );
+// }
+
+// function NewPara() {
+//   return <p>this is para</p>;
+// }
+// function NewHeader(props) {
+//   // console.log("props",props.title)
+//   const { title } = props;
+//   console.log("🚀 ~ NewHeader ~ title:", title);
+//   return <h1 className="list-red">{title}</h1>;
+// }
+
+function Card() {
   return (
     <div>
-      <Para title="My favourite books" />
-      <List list={["math", "eng", "urdu", "bio"]} />
-      <Header heading="Heading 1" />
-      <Header heading="Heading 2" />
-      <Header heading="Heading 3" />
-      <Para />
-      <Para title="My favourite fruits" />
-      <List list={["mango", "orange", "banan", "apple"]} />
+      {/* <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewHeader title="my custome heading" />
+      <NewPara /> */}
     </div>
   );
 }
 
+function HomePage() {
+  // const [counter, setCounter] = React.useState(0);
+  const [showPara, setShowPara] = React.useState(true);
+
+
+  const handleShowPara = () => {
+    setShowPara(true); //showPara=true
+  };
+
+
+  const handleHidePara = () => {
+    setShowPara(false); // showPara=false
+  };
+  // var counter = 1;
+
+  // const increment = () => {
+  //   // counter++;
+  //   setCounter(counter + 1); // counter++
+  //   console.log("counter inc", counter);
+  // };
+  // const decrement = () => {
+  //   setCounter(counter - 1); //counter--;
+  //   console.log("counter dec", counter);
+  // };
+  console.log("showpara", showPara);
+  return (
+    <div>
+      {/* <button onClick={decrement}>-</button>
+      <span>{counter}</span>
+      <button onClick={increment}>+</button> */}
+
+      {/* {showPara ? (
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          doloremque voluptatum neque molestiae soluta? Ipsa eos temporibus
+          maxime sequi nostrum voluptatem quos sapiente iure. Incidunt porro non
+          eum illo id.
+        </p>
+      ) : (
+        <p></p>
+      )} */}
+
+      {showPara && (
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+          doloremque voluptatum neque molestiae soluta? Ipsa eos temporibus
+          maxime sequi nostrum voluptatem quos sapiente iure. Incidunt porro non
+          eum illo id.
+        </p>
+      )}
+
+      <button onClick={handleShowPara}>show Para</button>
+      <button onClick={handleHidePara}> hide Para</button>
+    </div>
+  );
+}
 const root = ReactDOM.createRoot(app);
 root.render(<HomePage />);
