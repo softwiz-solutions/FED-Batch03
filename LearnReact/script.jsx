@@ -96,35 +96,34 @@ function Card() {
 }
 
 function HomePage() {
-  // const [counter, setCounter] = React.useState(0);
+  const [counter, setCounter] = React.useState(0);
   const [showPara, setShowPara] = React.useState(true);
-
 
   const handleShowPara = () => {
     setShowPara(true); //showPara=true
   };
-
 
   const handleHidePara = () => {
     setShowPara(false); // showPara=false
   };
   // var counter = 1;
 
-  // const increment = () => {
-  //   // counter++;
-  //   setCounter(counter + 1); // counter++
-  //   console.log("counter inc", counter);
-  // };
-  // const decrement = () => {
-  //   setCounter(counter - 1); //counter--;
-  //   console.log("counter dec", counter);
-  // };
+  const increment = () => {
+    // counter++;
+    setCounter(counter + 1); // counter++ // counter=100
+    console.log("counter inc", counter);
+  };
+  const decrement = () => {
+    // counter--;
+    setCounter(counter - 1);
+    console.log("counter dec", counter);
+  };
   console.log("showpara", showPara);
   return (
     <div>
-      {/* <button onClick={decrement}>-</button>
+      <button onClick={decrement}>-</button>
       <span>{counter}</span>
-      <button onClick={increment}>+</button> */}
+      <button onClick={increment}>+</button>
 
       {/* {showPara ? (
         <p>
