@@ -1,3 +1,4 @@
+import FruitList from "@/components/FruitList";
 import Header from "@/components/Header";
 import SectionHeader from "@/components/SectionHeader";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -13,6 +14,10 @@ export default function Home() {
     //   alignItems: "center",
     // }}
     >
+      {/* <FruitList
+        title="Books List"
+        list={["math", "engligh", "bio", "urdu", "chem"]}
+      /> */}
       {/* <div>
         <Header title="Todo List" />
         <Todo />
