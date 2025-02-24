@@ -36,6 +36,10 @@ export default function Home() {
   ];
   return (
     <div style={{ padding: "23px" }}>
+      <CounterApp />
+      <Header title="Deo1" />
+      <Header title="Deo2" />
+
       <FruitList
         title="Fruit List"
         list={["apple", "banana", "orange", "strawberry", "pineapple"]}

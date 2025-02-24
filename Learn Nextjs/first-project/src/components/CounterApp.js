@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import MainButton from "./MainButton";
 
 export default function CounterApp() {
   const [counter, setCouter] = useState(0);
@@ -9,11 +10,15 @@ export default function CounterApp() {
   const handleDecrement = () => {
     setCouter(counter - 1);
   };
+  const handleReset = () => {
+    setCouter(0);
+  };
   return (
     <div>
-      <button onClick={handleDecrement}>-</button>
-      <span>{counter}</span>
-      <button onClick={handleIncrement}>+</button>
+      <p>{counter}</p>
+      <MainButton title="+" />
+      <MainButton title="-" />
+      <MainButton title="Reset" />
     </div>
   );
 }
