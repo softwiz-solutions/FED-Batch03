@@ -5,6 +5,10 @@ import MainButton from "./MainButton";
 export default function TodoApp() {
   const [todo, setTodo] = useState([]);
   const [input, setInput] = useState("");
+  const [selectedTodo, setSelectedTodo] = useState({
+    id: "",
+    text: "",
+  });
 
   const addTodo = () => {
     console.log("input add todo", input);
@@ -22,7 +26,36 @@ export default function TodoApp() {
     // todo=updatedTodo
     setTodo(updatedTodo);
   };
-  console.log("todo", todo);
+  const editTodo = (index, item) => {
+    setInput(item);
+    setSelectedTodo({
+      id: index,
+      text: item,
+    });
+    console.log("🚀 ~ TodoApp ~ index, item:", index, item);
+  };
+  const updateTodo = () => {
+    console.log("handle update", input);
+    console.log("seletec update", selectedTodo);
+    console.log("todo", todo);
+    var updatedTodo = todo.map((item, index) => {
+      console.log("index", index);
+      console.log("🚀 ~ updatedTodo ~ item:", item);
+      if (index == selectedTodo.id) {
+        return input;
+      }
+      return item;
+    });
+    // console.log("🚀 ~ updatedTodo ~ updatedTodo:", updatedTodo);
+    setTodo(updatedTodo);
+    setInput("");
+    setSelectedTodo({
+      id: "",
+      text: "",
+    });
+  };
+  console.log("seletec", selectedTodo);
+  console.log("input", input);
   return (
     <div>
       <form>
@@ -36,6 +69,7 @@ export default function TodoApp() {
           }}
         />
         <MainButton type="button" onUserClick={addTodo} title="Add Task" />
+        <MainButton type="button" onUserClick={updateTodo} title="Update" />
       </form>
       <ul>
         {todo.map((item, index) => {
@@ -52,7 +86,14 @@ export default function TodoApp() {
                     deleTodo(index);
                   }}
                 />
-                <MainButton type="button" title="Update" bgColor="blue" />
+                <MainButton
+                  type="button"
+                  title="Edit"
+                  bgColor="blue"
+                  onUserClick={() => {
+                    editTodo(index, item);
+                  }}
+                />
               </div>
             </li>
           );
